@@ -98,8 +98,7 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-
-/* ------- BASE HEADER - FOOTER STYLES ------- */
+   /* ------- BASE HEADER - FOOTER STYLES ------- */
 
 header, 
 footer {
@@ -164,117 +163,65 @@ header nav ul li a {
 
 /* Main Styles */
 
-.hero-area {
+main {
+
+}
+
+.mission {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
 }
 
-.hero-area .content-wrapper {
+.mission .content-wrapper {
 
 }
 
-.hero-area h1 {
+.mission-content {
 
 }
 
-aside {
+.mission-content h1 {
+
+}
+
+.mission-content p {
+
+}
+
+.map {
+
+}
+
+.map figure {
+
+}
+
+.contact-section {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
 }
 
-aside .content-wrapper {
+.contact-section .content-wrapper {
 
 }
 
-aside .form-description {
+.contact-section .content-wrapper h2 {
 
 }
 
-aside .form-description h3 {
+.contact-content {
 
 }
 
-aside .form-description p {
+.contact-content h4 {
 
 }
 
-aside .form {
-
-}
-
-aside .form h3 {
-
-}
-
-aside .form input {
-
-}
-
-.features {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-
-.features .content-wrapper {
-
-}
-
-.features h2 {
-
-}
-
-.features .features-items {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-}
-
-.features article {
-
-}
-
-.fontawesome-icon {
-
-}
-
-.features-item-description {
-
-}
-
-.reviews {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-}
-
-.reviews .content-wrapper {
-
-}
-
-.reviews .content-wrapper h2 {
-
-}
-
-.reviews article {
-
-}
-
-.reviews article div {
-
-}
-
-.reviews h3 {
-
-}
-
-.reviews p {
+.contact-content p {
 
 }
 
@@ -295,7 +242,7 @@ footer .footer-content {
 }
 
 footer .contact {
-  
+
 }
 
 footer .contact h4 {
@@ -329,6 +276,13 @@ footer .social-icons p {
 footer .social-icons p a {
 
 }
+
+
+
+
+
+
+
 
 
 

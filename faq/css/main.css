@@ -98,8 +98,7 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-
-/* ------- BASE HEADER - FOOTER STYLES ------- */
+/* Base Header - Footer Styles */
 
 header, 
 footer {
@@ -108,9 +107,6 @@ footer {
   align-items: center;
   flex-flow: row wrap;
 }
-
-
-
 
 
 
@@ -164,120 +160,39 @@ header nav ul li a {
 
 /* Main Styles */
 
-.hero-area {
+main {
+
+}
+
+.faq {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
 }
 
-.hero-area .content-wrapper {
-
-}
-
-.hero-area h1 {
-
-}
-
-aside {
+.faq .content-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
 }
 
-aside .content-wrapper {
+.faq .content-wrapper h2 {
 
 }
 
-aside .form-description {
+.faq-content {
 
 }
 
-aside .form-description h3 {
+.faq-content h4 {
 
 }
 
-aside .form-description p {
+.faq-content p {
 
 }
-
-aside .form {
-
-}
-
-aside .form h3 {
-
-}
-
-aside .form input {
-
-}
-
-.features {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-
-.features .content-wrapper {
-
-}
-
-.features h2 {
-
-}
-
-.features .features-items {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-}
-
-.features article {
-
-}
-
-.fontawesome-icon {
-
-}
-
-.features-item-description {
-
-}
-
-.reviews {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-}
-
-.reviews .content-wrapper {
-
-}
-
-.reviews .content-wrapper h2 {
-
-}
-
-.reviews article {
-
-}
-
-.reviews article div {
-
-}
-
-.reviews h3 {
-
-}
-
-.reviews p {
-
-}
-
 
 
 /* Footer Styles */
@@ -295,7 +210,7 @@ footer .footer-content {
 }
 
 footer .contact {
-  
+
 }
 
 footer .contact h4 {
@@ -329,6 +244,7 @@ footer .social-icons p {
 footer .social-icons p a {
 
 }
+
 
 
 
