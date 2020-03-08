@@ -98,7 +98,12 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-   /* ------- BASE HEADER - FOOTER STYLES ------- */
+.content-wrapper {
+  width: 90%;
+  margin: 50px 0;
+}
+
+/* -------------------- Base Header - Footer Styles -------------------- */
 
 header, 
 footer {
@@ -109,14 +114,10 @@ footer {
 }
 
 
-
-
-
-
-/* Header Styles */
+/* Header */
 
 header {
-
+  padding: 15px 0;
 }
 
 header .content-wrapper {
@@ -124,6 +125,7 @@ header .content-wrapper {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  margin: 0;
 }
 
 header .content-wrapper a {
@@ -135,7 +137,9 @@ header .content-wrapper a img {
 }
 
 header .header-divider {
-
+  width: 100%;
+  height: 1px;
+  margin: 10px 0 20px 0;
 }
 
 header nav {
@@ -143,12 +147,13 @@ header nav {
   justify-content: space-around;
   align-items: center;
   flex-flow: row wrap;
+  width: 60%;
 }
 
 header nav ul {
   display: flex;
   justify-content: center;
-  align-items: center;
+  width: 100%;
 }
 
 header nav ul li {
@@ -160,81 +165,19 @@ header nav ul li a {
 }
 
 
-
-/* Main Styles */
-
-main {
-
-}
-
-.mission {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-}
-
-.mission .content-wrapper {
-
-}
-
-.mission-content {
-
-}
-
-.mission-content h1 {
-
-}
-
-.mission-content p {
-
-}
-
-.map {
-
-}
-
-.map figure {
-
-}
-
-.contact-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-}
-
-.contact-section .content-wrapper {
-
-}
-
-.contact-section .content-wrapper h2 {
-
-}
-
-.contact-content {
-
-}
-
-.contact-content h4 {
-
-}
-
-.contact-content p {
-
-}
-
-
-
-/* Footer Styles */
+/* Footer */
 
 footer {
+  flex-direction: column;
+}
 
+footer p {
+  margin: 0;
 }
 
 footer .content-wrapper {
-
+  width: 55%;
+  margin: 50px 0;
 }
 
 footer .footer-content {
@@ -242,7 +185,7 @@ footer .footer-content {
 }
 
 footer .contact {
-
+  margin-bottom: 50px;
 }
 
 footer .contact h4 {
@@ -270,12 +213,89 @@ footer .social-icons {
 }
 
 footer .social-icons p {
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 footer .social-icons p a {
 
 }
+
+footer .copyright {
+  margin: 20px 0;
+}
+
+/* -------------------- Mobile Styles - About Page -------------------- */
+
+/* Mission */
+
+.mission {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.mission .content-wrapper {
+
+}
+
+.mission-content {
+
+}
+
+.mission-content h1 {
+
+}
+
+.mission-content p {
+
+}
+
+
+/* Map */
+
+.map {
+
+}
+
+.map figure {
+
+}
+
+
+/* Contact */
+
+.contact-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.contact-section .content-wrapper {
+
+}
+
+.contact-section .content-wrapper h2 {
+
+}
+
+.contact-content {
+  margin: 0;
+}
+
+.contact-content h4 {
+
+}
+
+.contact-content p {
+
+}
+
+
+
 
 
 
@@ -381,16 +401,103 @@ footer .social-icons p a {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+@media only screen and (min-width: 768px) {
+  /* ---Tablet Styles--- */
+
+  .content-wrapper {
+    max-width: 640px;
+    margin: 100px 0;
 }
 
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
+/* Header */
+
+header {
+  justify-content: space-around;
+  padding: 33px 0;
 }
+
+header .content-wrapper {
+    width: 100%
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav {
+    width: 20%
+}
+
+header nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-divider {
+    display: none;
+}
+
+
+/* Mission */
+
+.mission-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.mission-content p {
+  width: 45%
+}
+
+.contact-section .content-wrapper h2 {
+  width: 80%;
+}
+
+.contact-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+
+/* Footer */
+
+footer .content-wrapper {
+    width: 65%
+    margin: 100px 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .contact {
+    margin-bottom: 0;
+}
+
+footer .copyright {
+    width: 100%;
+}
+}
+
+
+
+
+@media only screen and (min-width: 1200px) {
+  /* Desktop Styles */
+
+  .mission h2,
+    .contact-section .content-wrapper h2 {
+        width: 95%;
+    }
+ 
+    .contact-section .content-wrapper h2 {
+        margin-bottom: ;
+    }
+}
+
 
 /* ==========================================================================
    Print styles.

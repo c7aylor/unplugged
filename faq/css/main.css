@@ -98,7 +98,12 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-/* Base Header - Footer Styles */
+.content-wrapper {
+  width: 90%;
+  margin: 50px 0;
+}
+
+/* -------------------- Base Header - Footer Styles -------------------- */
 
 header, 
 footer {
@@ -109,11 +114,10 @@ footer {
 }
 
 
-
-/* Header Styles */
+/* Header */
 
 header {
-
+  padding: 15px 0;
 }
 
 header .content-wrapper {
@@ -121,6 +125,7 @@ header .content-wrapper {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  margin: 0;
 }
 
 header .content-wrapper a {
@@ -132,7 +137,9 @@ header .content-wrapper a img {
 }
 
 header .header-divider {
-
+  width: 100%;
+  height: 1px;
+  margin: 10px 0 20px 0;
 }
 
 header nav {
@@ -140,12 +147,13 @@ header nav {
   justify-content: space-around;
   align-items: center;
   flex-flow: row wrap;
+  width: 60%;
 }
 
 header nav ul {
   display: flex;
   justify-content: center;
-  align-items: center;
+  width: 100%;
 }
 
 header nav ul li {
@@ -157,12 +165,71 @@ header nav ul li a {
 }
 
 
+/* Footer */
 
-/* Main Styles */
+footer {
+  flex-direction: column;
+}
 
-main {
+footer p {
+  margin: 0;
+}
+
+footer .content-wrapper {
+  width: 55%;
+  margin: 50px 0;
+}
+
+footer .footer-content {
 
 }
+
+footer .contact {
+  margin-bottom: 50px;
+}
+
+footer .contact h4 {
+
+}
+
+footer .contact p {
+
+}
+
+footer .social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .social h4 {
+
+}
+
+footer .social-icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer .social-icons p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .social-icons p a {
+
+}
+
+footer .copyright {
+  margin: 20px 0;
+}
+
+
+/* -------------------- Mobile Styles - FAQ Page -------------------- */
+
+/* FAQ */
 
 .faq {
   display: flex;
@@ -194,56 +261,6 @@ main {
 
 }
 
-
-/* Footer Styles */
-
-footer {
-
-}
-
-footer .content-wrapper {
-
-}
-
-footer .footer-content {
-
-}
-
-footer .contact {
-
-}
-
-footer .contact h4 {
-
-}
-
-footer .contact p {
-
-}
-
-footer .social {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-footer .social h4 {
-
-}
-
-footer .social-icons {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-footer .social-icons p {
-
-}
-
-footer .social-icons p a {
-
-}
 
 
 
@@ -343,15 +360,87 @@ footer .social-icons p a {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+@media only screen and (min-width: 768px) {
+  /* ---Tablet Styles--- */
+  
+  .content-wrapper {
+    max-width: 640px;
+    margin: 100px 0;
 }
 
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
+
+/* Header */
+
+header {
+  justify-content: space-around;
+  padding: 33px 0;
+}
+
+header .content-wrapper {
+    width: 100%;
+    justify-content: space-between;
+}
+
+header nav {
+    width: 20%;
+}
+
+header nav ul {
+  justify-content: space-between;
+}
+
+.header-divider {
+    display: none;
+}
+
+
+/* FAQ */
+
+.faq .content-wrapper {
+  justify-content: space-between;
+}
+
+.faq-content {
+  flex-basis: 40%;
+}
+
+.faq h2 {
+  width: 100%;
+}
+
+
+/* Footer */
+
+footer .content-wrapper {
+    width: 65%;
+    margin: 100px 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .contact {
+    margin-bottom: 0;
+}
+
+footer .copyright {
+    width: 100%;
+}
+}
+
+@media only screen and (min-width: 1200px) {
+  /* Desktop Styles */
+
+  .faq h2 {
+    width: 100%;
+}
+
+.faq-content {
+    flex-basis: ;
+}
 }
 
 /* ==========================================================================
